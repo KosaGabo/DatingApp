@@ -28,6 +28,7 @@
               "node_modules/bootswatch/dist/materia/bootstrap.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/ngx-toastr/toastr.css",
+              "node_modules/ngx-spinner/animations/line-scale-party.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -109,6 +110,6 @@
     }
   },
   "cli": {
-    "analytics": "c2476bf2-40ba-48b4-a123-d37e029d65b0"
+    "analytics": "8d260aab-5519-4a18-af87-22b398fa2120"
   }
 }
