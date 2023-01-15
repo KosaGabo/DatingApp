@@ -14,7 +14,7 @@ import { MembersService } from 'src/app/_services/members.service';
 })
 export class MemberEditComponent implements OnInit {
   @ViewChild('editForm') editForm: NgForm | undefined;
-  @HostListener('window:beforeunload', ['$event']) unloadNotification($event:any) {
+  @HostListener('window:beforeunload', ['$event']) unloadNotification($event: any) {
     if (this.editForm?.dirty) {
       $event.returnValue = true;
     }
@@ -22,8 +22,8 @@ export class MemberEditComponent implements OnInit {
   member: Member | undefined;
   user: User | null = null;
 
-  constructor(private accountService: AccountService, private memberService: MembersService, 
-      private toastr: ToastrService) { 
+  constructor(private accountService: AccountService, private memberService: MembersService,
+    private toastr: ToastrService) {
     this.accountService.currentUser$.pipe(take(1)).subscribe({
       next: user => this.user = user
     })

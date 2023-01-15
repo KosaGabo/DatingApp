@@ -17,7 +17,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     }),
     NgxGalleryModule,
     NgxSpinnerModule.forRoot({
-      type: 'line-scale-party'
+      type: 'ball-atom'
     })
   ],
   exports: [
