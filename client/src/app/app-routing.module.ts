@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutMeComponent } from './aboutMe/about-me/about-me.component';
 import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { ServerErrorComponent } from './errors/server-error/server-error.component';
@@ -17,6 +18,7 @@ import { MemberDetailedResolver } from './_resolvers/member-detailed.resolver';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'aboutme', component: AboutMeComponent},
   {path: '',
     runGuardsAndResolvers: 'always',
     canActivate: [AuthGuard],
